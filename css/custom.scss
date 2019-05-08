@@ -1,0 +1,379 @@
+/*** Colors Defined ***/
+$accent-color:  #c3b091; //current
+$comp-color: #d8cbb7;
+$dark: #313133; // overrides default 'dark'
+$eggshell: #f9f9f9; 
+$comp-color-blue: #91a4c3; 
+
+/*** Fonts ***/
+$font-main: 'Cinzel', serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+body, p {
+	font-family: $font-secondary;
+	font-size: 1rem;
+	line-height:  1.85rem;
+}
+
+header {
+	z-index: 3; 
+}
+
+hr {
+	max-width: 90%;
+	border-width: 1px;
+	border-color: $accent-color;
+}
+
+a {
+	color: $accent-color;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	&:hover {
+		color: $comp-color;
+		text-decoration: none; 
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-main;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+.bg-dark {
+	background-color: $dark!important;
+}
+
+.bg-dark-opacity {
+	background: rgba(0,0,0,0.75);
+}
+
+.bg-accent {
+	background-color: $accent-color;
+}
+
+.text-white {
+	color: $eggshell!important;
+}
+
+.text-primary {
+		color: $accent-color!important;
+}
+
+.text-size-xs {
+	font-size: .65rem;
+}
+
+.bg-opacity {
+	background-color: rgba(249, 249, 249, 0.8);
+	background-blend-mode: lighten;
+}
+
+
+.shadow-inverted {
+  box-shadow: 0 0.5rem 1rem rgba(195, 176, 255, 0.15) !important;
+}
+
+.tagline-container {  
+	padding:  10% 15%; 
+	background-image: url("../img/wood-bg.png");
+	background-repeat: no-repeat;
+	background-color: $dark;
+	background-position: center;
+	background-size: cover;
+	p {
+		font-size: 1.25rem!important; 
+		line-height: 2.25rem; 
+	}
+}
+
+.tagline-container-events {  
+	padding: 5% 10%; 
+	background-image: url("../img/wood-bg.png");
+	background-repeat: no-repeat;
+	background-color: $dark;
+	background-position: center;
+	background-size: cover;
+	p {
+		font-size: 1rem!important; 
+		line-height: 2rem; 
+	}
+}
+
+.footer-section, .maps-section, .nav-section {
+	background-image: url("../img/wood-bg.png");
+	background-repeat: no-repeat;
+	background-color: $dark;
+	background-position: center;
+	background-size: cover;
+}
+
+
+#lighthouse {
+	background-image: url("../img/psc-lths.png");
+	min-height: 400px;
+	max-width: 100%;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+	padding-top: 50%;
+	margin-top: -30%;
+	position: relative;
+	z-index: -999!important;
+}
+
+/**** Info Blocks ****/
+.img-gradient1, 
+.img-gradient2,
+.img-gradient5, 
+.img-gradient6,
+.img-gradient7,
+.img-gradient8,
+.img-gradient3 {
+	background-repeat: no-repeat;
+	background-color: $dark;
+	background-position: center;
+	background-size: cover;
+	padding-top: 25%;
+	padding-bottom: 25%;
+}
+
+.img-gradient1 {
+	background-image: url("../img/psc-couplesmiling.jpg");
+}
+
+.img-gradient2 {
+	background-image: url("../img/psc-23.jpg");
+}
+.img-gradient3 {
+	background-image: linear-gradient(rgba(17, 17, 17, 0.6), rgba(0, 0, 0, 0.2)),url("../img/fireworks.png");
+}
+
+.img-gradient5 {
+	background-image: url("../img/psc-q.jpg");
+}
+
+.img-gradient6 {
+	background-image: url("../img/psc-o.jpg");
+}
+
+.img-gradient7 {
+	background-image: url("../img/bagheera-history.jpeg");
+}
+.img-gradient8 {
+	background-image: url("../img/psc-1-resized.jpg");
+}
+
+
+card-body-2 {
+	margin-top: -200px;
+}
+
+/*** Nav Styles ***/
+#siteNav {
+	font-family: 'Cinzel', serif;
+	letter-spacing: 3px;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	.navbar-brand {
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+}
+
+#siteNav .navbar-brand:focus,
+#siteNav .navbar-brand:hover {
+	color: $accent-color;
+}
+
+#siteNav .navbar-nav>li.nav-item>a.nav-link,
+#siteNav .navbar-nav>li.nav-item>a.nav-link:focus {
+	font-size: .9rem;
+	font-weight: 700;
+	color: $eggshell;
+}
+
+#siteNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,
+#siteNav .navbar-nav>li.nav-item>a.nav-link:hover {
+	color: $accent-color;
+}
+
+#siteNav .navbar-nav>li.nav-item>a.nav-link.active,
+#siteNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
+	color: $accent-color;
+	background-color: transparent;
+}
+
+#siteNav .navbar-nav>li.nav-item>a.nav-link.active:hover,
+#siteNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover {
+	background-color: transparent;
+}
+
+.dropdown-menu {
+	background-color: $eggshell;
+}
+
+
+.dropdown-menu a:hover {
+	background-color: $comp-color;
+}
+
+/*** Social Media & Email Bar ***/
+#locationBar, #hash-text {
+	font-size: .75rem;
+	font-family: $font-secondary;
+	color: $eggshell; 
+	letter-spacing: 3px; 
+	margin-top: -2px;
+}
+
+/*** Video Jumbotron ***/
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+	background-color: $dark;
+	border-radius:0!important; 	
+	margin-top: 0;
+}
+.jumbotron video {
+  object-fit: cover;
+	opacity:0.8;
+	z-index: 1;
+}
+
+.jumbotron video {
+  -moz-transform:scale(2.5);
+  -webkit-transform:scale(2.5);
+  -o-transform:scale(2.5);
+  -ms-transform:scale(2.5);
+  transform:scale(2.5);
+}
+
+.jumbotron .container {
+  z-index: 2;
+	position: relative;
+	margin: 15% 0 15% 0; 
+	padding: 0 0 0 5%;
+}
+
+/*** Hero Image Supporting Pages ***/
+.hero,
+.hero-history, 
+.hero-faq, 
+.hero-contact,
+.hero-employment, 
+.hero-ticket, 
+.hero-news {
+	height: auto;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-color: $dark;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.6), rgba(0, 0, 0, 0.2)), url("../img/psc-26.jpg");
+    background-position: center left;
+}
+
+.hero-history {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.6), rgba(0, 0, 0, 0.2)), url("../img/history-hero.jpg");
+    background-position: center left;
+}
+
+.hero-faq {
+	background-image: linear-gradient(rgba(17, 17, 17, 0.6), rgba(0, 0, 0, 0.2)), url("../img/psc-q.jpg");
+	background-position: center left;
+}
+
+
+.hero-employment {
+	background-image: linear-gradient(rgba(17, 17, 17, 0.6), rgba(0, 0, 0, 0.2)), url("../img/psc-g.jpg");
+	background-position: top left;;
+}
+
+.hero-contact {
+	background-image: linear-gradient(rgba(17, 17, 17, 0.6), rgba(0, 0, 0, 0.2)), url("../img/psc-16x9.jpg");
+	background-position: center right;
+}
+
+.hero-ticket {
+	background-image: linear-gradient(rgba(17, 17, 17, 0.6), rgba(0, 0, 0, 0.2)), url("../img/ticketbooth.jpeg");
+	background-position: center right;
+}
+
+.hero-news {
+	background-image: linear-gradient(rgba(17, 17, 17, 0.6), rgba(0, 0, 0, 0.2)), url("../img/psc-34.jpg");
+	background-position: center right;
+}
+
+/*** Drop Caps ***/
+.firstcharacter {
+  float: left;
+  font-size: 4rem;
+  line-height: 2.5rem;
+  padding-top: 1rem;
+  padding-right: 1%;
+	padding-left: 3px;
+	font-family: $font-main;
+}
+
+.firstcharacter-2 {
+  float: left;
+  font-size: 4.25rem;
+  line-height: 2.75rem;
+  padding-top: 1.1rem;
+  padding-right: 1%;
+	padding-left: 3px;
+	font-family: $font-main;
+}
+
+/*** Button Styles ***/
+.btn {
+	font-weight: 300;
+	border-radius: 5px!important;
+	font-family: $font-secondary;
+}
+.btn-xl {
+	padding: .5rem 1rem;
+}
+.btn-primary {
+	background-color: $accent-color;
+	border-color: $accent-color;
+	border-color: $accent-color;
+}
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+	color: $eggshell;
+	background-color:  #d8cbb7;
+}
+.btn-accent {
+	background-color: $accent-color;
+	border: $eggshell thin solid;
+	color: $eggshell;
+	font-size: .75rem;
+}
+.btn-accent:active,
+.btn-accent:focus,
+.btn-accent:hover {
+	color: #f9f9f9;
+	background-color: $accent-color!important;
+}
+
+footer {
+	line-height: 1.5rem;
+}
+
+.blog-link {
+	color: $comp-color-blue;
+	font-weight: 900; 
+}
