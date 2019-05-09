@@ -1,5 +1,9 @@
 /*** Colors Defined ***/
 /*** Fonts ***/
+html {
+  width: 100%;
+}
+
 /*------ Initial Typography Set---------*/
 html,
 body {
@@ -329,6 +333,11 @@ h6 {
   object-fit: cover;
   opacity: 0.8;
   z-index: 1;
+  -moz-transform: scale(2.5);
+  -webkit-transform: scale(2.5);
+  -o-transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  transform: scale(2.5);
 }
 
 .jumbotron .container {
@@ -345,7 +354,8 @@ h6 {
 .hero-contact,
 .hero-employment,
 .hero-ticket,
-.hero-news {
+.hero-news,
+.hero-home {
   height: auto;
   max-width: 100%;
   background-repeat: no-repeat;
@@ -388,6 +398,11 @@ h6 {
 .hero-news {
   background-image: linear-gradient(rgba(17, 17, 17, 0.6), rgba(0, 0, 0, 0.2)), url("../img/psc-34.jpg");
   background-position: center right;
+}
+
+.hero-home {
+  background-image: linear-gradient(rgba(17, 17, 17, 0.6), rgba(0, 0, 0, 0.2)), url("../img/psc-p-flipped.jpg");
+  background-position: bottom right;
 }
 
 /*** Drop Caps ***/
@@ -457,5 +472,3 @@ footer {
   color: #91a4c3;
   font-weight: 900;
 }
-
-/************** Media Queries *****************/
